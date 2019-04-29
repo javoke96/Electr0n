@@ -1,0 +1,181 @@
+﻿<% @Page Language="C#" AutoEventWireup="true" CodeBehind="Index.cs"
+   Inherits="ASPCities.Controllers.Index"  %>
+<html>
+<head>
+    <style>
+
+        html {
+            background-color: #1a1a1a;
+            overflow: auto;
+        }
+
+        tbody td {
+            border: solid 1px #DDEEEE;
+            color: #333;
+            padding: 10px;
+            text-shadow: 1px 1px 1px #fff;
+        }
+
+        thead th {
+            background-color: #DDEFEF;
+            border: solid 1px #DDEEEE;
+            color: #336B6B;
+            padding: 10px;
+            text-align: left;
+            text-shadow: 1px 1px 1px #fff;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            border: solid 1px #DDEEEE;
+            border-collapse: collapse;
+            border-spacing: 0;
+            font: normal 13px Arial, sans-serif;
+        }
+
+        #table-scroll {
+            max-height: 270px;
+            overflow: auto;
+            margin-top: 20px;
+        }
+
+        .status {
+            max-height: 15px;
+        }
+
+        .city {
+            background-image: url("https://www.discotech.me/wp-content/uploads/2015/07/miami-south-beach_596x334.jpg") filter: blur(8px);
+            -webkit-filter: blur(8px);
+            z-index: -2;
+            position: absolute;
+        }
+
+        .inputFields {
+            margin: 15px 0;
+            font-size: 16px;
+            padding: 10px;
+            width: 250px;
+            border: 1px solid rgba(10, 180, 180, 1);
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background: rgba(20, 20, 20, .2);
+            color: white;
+            outline: none;
+        }
+
+        .line {
+            height: 25px;
+            width: 100%;
+            display: block;
+        }
+
+        .deleted {
+            background-color: cyan;
+        }
+
+        .added {
+            background-color: green;
+        }
+
+        .api {
+            width: 45%;
+            align: center;
+            display: inline-block;
+        }
+
+        .apis {
+            width: 100%;
+        }
+
+        .papi {
+            width: 45%;
+            align: center;
+            display: inline-block;
+        }
+    </style>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+</head>
+<body>
+    <center>
+        <div style="background-color:grey">
+            <h1 style="color:white">Share with us city that RAVE!</h1>
+        </div>
+        <form runat="server">
+            <asp:TextBox runat="server" type="text" class="validate[required,custom[onlyLetter],length[0,20]] inputFields" name="name" id="name" placeholder="City name">
+            </asp:TextBox>
+            <br>
+
+            <br>
+            <asp:RadioButton runat="server" GroupName="status" id="rstatus" value="1"></asp:RadioButton>
+            Raves Today
+            <br>
+            <asp:RadioButton runat="server" GroupName="status" value="0"></asp:RadioButton>
+            Doesn't Rave
+            <br>
+            <asp:Button runat="server" type="submit" id="submit" value="Submit" name="add" onclick="Form_submit" />
+        </form>
+
+
+
+        <br>
+        <br>
+
+    </center>
+
+    <div id="table-scroll">
+        <table class="table" id="table-scroll">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>City</th>
+                    <th>Previous City</th>
+                    <th>Status</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cities"></tbody>
+            <!--<td><img class="status" src="https://www.colorcombos.com/images/colors/92CD00.png"></td>
+
+            <td><img class="status" src="https://www.colorcombos.com/images/colors/AA0114.png"></td>-->
+
+
+        </table>
+
+    </div>
+    <br>
+    <br>
+    <center>
+        <div class="apis">
+            <div class=api>
+                <a href="api/City"><button>Get Api:</button></a>
+                <br>
+                <br>
+                <div style="max-width=70%; heigth=100px; overflow=auto; margin: 0 auto;">
+                    <iframe src="api/City"></iframe>
+                </div>
+            </div>
+
+            <div class="papi">
+                <p>Or POST it </p>
+                <br>
+                <p> Link: POST api/City</p>
+                <p> Name and Status needs to be set</p>
+                <br><br><br>
+            </div>
+        </div>
+
+    </center>
+    <script>var objDiv = document.getElementById("table-scroll");
+        objDiv.scrollTop = objDiv.scrollHeight;</script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="site.js"></script>
+</body>
+</html>

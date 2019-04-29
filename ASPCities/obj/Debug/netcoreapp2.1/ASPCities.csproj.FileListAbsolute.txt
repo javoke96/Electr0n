@@ -1,0 +1,14 @@
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/obj/Debug/netcoreapp2.1/ASPCities.csprojAssemblyReference.cache
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/obj/Debug/netcoreapp2.1/ASPCities.csproj.CoreCompileInputs.cache
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/obj/Debug/netcoreapp2.1/ASPCities.RazorAssemblyInfo.cache
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/obj/Debug/netcoreapp2.1/ASPCities.RazorAssemblyInfo.cs
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/obj/Debug/netcoreapp2.1/ASPCities.AssemblyInfoInputs.cache
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/obj/Debug/netcoreapp2.1/ASPCities.AssemblyInfo.cs
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/bin/Debug/netcoreapp2.1/ASPCities.deps.json
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/bin/Debug/netcoreapp2.1/ASPCities.runtimeconfig.json
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/bin/Debug/netcoreapp2.1/ASPCities.runtimeconfig.dev.json
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/bin/Debug/netcoreapp2.1/ASPCities.dll
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/bin/Debug/netcoreapp2.1/ASPCities.pdb
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/obj/Debug/netcoreapp2.1/ASPCities.RazorTargetAssemblyInfo.cache
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/obj/Debug/netcoreapp2.1/ASPCities.dll
+/Users/javidfataliyev/Projects/ASPCities/ASPCities/obj/Debug/netcoreapp2.1/ASPCities.pdb
